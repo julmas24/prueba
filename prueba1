@@ -1,0 +1,23 @@
+def listas():
+    paises=[]
+    pregunta='Cual pais te gustaria visitar:'
+    pais=input(pregunta)
+    while pais !='':
+        paises.append(pais)
+        pais=input(pregunta)
+    buscar=input('ingrese un pais a buscar:')
+    cont=0
+    for cuenta in paises:
+        if cuenta==buscar:
+           cont=cont+1
+        else:
+           cont=cont
+    if cont==1:
+        print(buscar+' si es un pais que usted desea visitar')
+    else:
+        print(buscar+' no es un pais que usted desea visitar')
+          
+
+    
+
+        
